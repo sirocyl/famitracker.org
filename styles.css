@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Montserrat+Alternates:400,900&display=swap");
+
+html {
+    font-size: 16pt;
+    line-height: 1.5;
+    font-family: "Montserrat", sans-serif;
+    color: #cab6c1;
+}
+
+body {
+    margin: 0;
+    background-color: #000a24;
+/*
+    background-image: url("icon.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom right;
+*/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    color: #c7c5ed;
+}
+
+a:visited {
+    color: #dbdeed;
+}
+
+.sub-link {
+    font-size: 0.666rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#main-header { /* the entire header section */
+    background: url("famiback-transparent-fade.png") center repeat-x, linear-gradient(#131751 66%, rgba(0,0,0,0));
+    padding: 3rem 0;
+}
+
+#main-header .header-title { /* the title section - h1 and icon */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#main-header .icon { /* icon and its comet trail */
+    display: flex;
+    justify-content: flex-end;
+    width: 30vw; /* override at >1000px and <500px */
+    margin-left: -23vw; /* override at >1000px and <500px */
+
+    background: linear-gradient(to left, #e6da00, transparent), url("famiback-transparent.png");
+    background-position: right;
+
+    transform: translateY(calc(1vw - 1rem)) rotate(-32deg); /* override at >1000px and <500px */
+    transform-origin: right;
+}
+#main-header .icon img { /* the icon itself */
+    background: linear-gradient(to right, transparent, #131751 12%);
+    width: calc(8vw + 2rem); /* override at >1000px and <500px */
+}
+
+#main-header h1 { /* header text */
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: calc(4vw + 0.5rem); /* override at >1000px and <500px */
+    margin: 0 0 3rem 1rem;
+    line-height: 1;
+    color: #e6da00;
+    text-align: left;
+}
+
+main,
+.links {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main {
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.links { /* the link buttons section */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.links a { /* the link buttons themselves */
+    display: block;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(#3b4082, #221848) padding-box, linear-gradient(rgba(10,20,30,0.2), #202860) border-box;
+    border: 3px solid transparent;
+    border-radius: 1rem;
+    text-decoration: none;
+    font-size: calc(2vw + 0.1rem); /* override at >1000px */
+}
+
+.links a:not(:last-child) { /* gap between links */
+    margin-right: 1rem;
+}
+
+.links a em {
+    font-style: normal;
+    font-weight: 800;
+}
+
+#main-footer {
+    font-size: 0.5rem;
+    margin: 2rem auto 1rem;
+    padding: 0 2rem;
+}
+
+#main-footer p {
+    margin: 0.1rem auto;
+}
+
+@media (max-width: 500px) { /* rules for small screens */
+    body {
+        background: linear-gradient(rgba(0,10,36,0.9), rgba(0,10,36,0)), url("famiback-transparent-fade.png") top center repeat-x, #000a24;
+    }
+    #main-header {
+        padding: 1rem 1.5rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(#131751 66%, rgba(0,0,0,0));
+    }
+
+    #main-header h1 {
+        font-size: 1.25rem;
+        text-align: left;
+        margin: 0;
+    }
+    #main-header .icon {
+        width: 2rem;
+        margin-left: -2rem;
+        margin-right: 0.25rem;
+        transform: translateY(-1rem) rotate(-32deg);
+        transform-origin: right;
+    }
+    #main-header .icon img {
+        width: 2rem;
+    }
+
+    #main-header .links {
+        /* FamiTracker is a PC program, so we don't need these links here. */
+        display: none;
+    }
+
+    main {
+        /* now that the header is floating, the main element needs some extra
+           vertical space since the header doesn't take up any anymore.
+           otherwise, it'll be behind the floating header a little. */
+        margin-top: calc(1rem * 2 + 1.25rem + 2rem);
+    }
+}
+
+@media (min-width: 1000px) { /* rules for large, wide screens */
+    /* fix the font sizes of the dynamically sized elements to prevent them from
+       growing too big */
+
+    #main-header h1 {
+        font-size: 4rem;
+    }
+
+    #main-header .icon {
+        width: 32rem;
+        margin-left: -24rem;
+        transform: translateY(-3rem) rotate(-32deg);
+    }
+
+    #main-header .icon img {
+        width: 8rem;
+    }
+
+    .links a {
+        font-size: 1.25rem;
+    }
+}

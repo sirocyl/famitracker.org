@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/retrodpc
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://famitracker.org
+  * I am retrodpc (https://keybase.io/retrodpc) on keybase.
+  * I have a public key ASBFc-OZ-dytcUX06c7NI2rAKOUGnExVFgP5uFCkNWF-XQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01204573e399f9dcad7145f4e9cecd236ac028e5069c4c551603f9b850a435617e5d0a",
+      "host": "keybase.io",
+      "kid": "01204573e399f9dcad7145f4e9cecd236ac028e5069c4c551603f9b850a435617e5d0a",
+      "uid": "446743744d2a20535cd929ce7aef7c19",
+      "username": "retrodpc"
+    },
+    "merkle_root": {
+      "ctime": 1536673142,
+      "hash": "ebc4904ee64076141618bd98f5f68fdbcc5c360c10686dce82211560361fb7b01d26ab43279837896f0e6c620b0801977d91d10aeddbf11cd1496d87e29afe44",
+      "hash_meta": "aac3257cc09e645815c401fca39fba555e0e2f23fb783b98a2a86427fd000661",
+      "seqno": 3593755
+    },
+    "service": {
+      "entropy": "XPKeUA10qzgSXxrwlJ3peT6X",
+      "hostname": "famitracker.org",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.6.0"
+  },
+  "ctime": 1536673152,
+  "expire_in": 504576000,
+  "prev": "b1e248a6eacd8ffbc35eb56ff0ff0db32382af9e2be369a46f5064b6162b7d77",
+  "seqno": 24,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgRXPjmfncrXFF9OnOzSNqwCjlBpxMVRYD+bhQpDVhfl0Kp3BheWxvYWTESpcCGMQgseJIpurNj/vDXrVv8P8NsyOCr54r42mkb1BkthYrfXfEICTXU1zdJNL+nAxRDS8osSofHp4UyzZKKPFpl1tBq9Q0AgHCo3NpZ8RANHcPCHqcj79rrWBLf7yODjDKbYzBWZXo2LOp+vzQMXaxqsKds6ExTLVnEggakhEDwQHe+MDrkraCbqqhPcdLAqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIN+oNxuSaPKbdv1S+YOOznfkFvSIWClavMOtJpQsQ805o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/retrodpc
+
+==================================================================
